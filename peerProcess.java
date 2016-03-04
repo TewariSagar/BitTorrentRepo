@@ -1,10 +1,10 @@
 public class peerProcess
 {
-
-		public static final fileSplit f = new fileSplit("/home/battery-issues/Documents/Project/test10Mb.db");
-	public peerProcess()
+	private static peerConnect pConnect;
+	public static final fileSplit f = new fileSplit("/cise/homes/stewari/Documents/Sagar/test10Mb.db");
+	public peerProcess(String peerID)
 	{
-		
+	  pConnect = new peerConnect(peerID);	
 	}
 	public static void main(String[] args) throws Exception
 	{
@@ -12,9 +12,9 @@ public class peerProcess
 		{
 			if(args[0].equals("1001"))
 			{
-				f.readInpFile();
+				f.readInpFile(args[0]);
 			}
-        peerProcess main = new peerProcess();
+        peerProcess main = new peerProcess(args[0]);
         f.mkdir(args[0]);
 		}
 		catch(Exception ex)

@@ -16,11 +16,11 @@ public readCommonCfg(String preferredNeighbors, String unchokingInterval, String
 	this.filename = filename;
 	this.filesize = filesize;
 	this.chunksize = chunksize;
-	System.out.println("NumberOfPreferredNeighbors " + preferredNeighbors);
-	System.out.println("UnchokingInterval " + unchokingInterval);
-	System.out.println("OptimisticUnchokingInterval " + optimisticUnchoke); 
-	System.out.println("FileName " + filename);
-	System.out.println("FileSize " + filesize);
-	System.out.println("PieceSize " + chunksize);
+	//System.out.println("NumberOfPreferredNeighbors " + preferredNeighbors);
+	//System.out.println("UnchokingInterval " + unchokingInterval);
+	//System.out.println("OptimisticUnchokingInterval " + optimisticUnchoke); 
+	//System.out.println("FileName " + filename);
+	//System.out.println("FileSize " + filesize);
+	//System.out.println("PieceSize " + chunksize);
 }	 
 }

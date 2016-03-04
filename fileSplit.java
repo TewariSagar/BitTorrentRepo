@@ -16,12 +16,12 @@ public class fileSplit
 	HashMap<Integer, String> h = new HashMap<Integer, String>();
  	public fileSplit(String inpFile)
 	{
-		System.out.println("Owner is splitting the file......");
 		this.inpFile = inpFile;
 	}
 
-	public void readInpFile() throws IOException
+	public void readInpFile(String arg0) throws IOException
 	{
+		System.out.println("Owner is splitting the file......");
 		chunkarr = new byte[chunkSize];
 		int x = 0;
 		int counter = 0;
@@ -34,7 +34,7 @@ public class fileSplit
 			{
 				try
 				{
-					File n = new File("/home/battery-issues/Documents/Project/Chunks", "test" + String.valueOf(counter) + ".db");
+					File n = new File("/cise/homes/stewari/Documents/Sagar/peer_" + arg0, "test" + String.valueOf(counter) + ".db");
 					FileOutputStream fo = new FileOutputStream(n);
 					fo.write(chunkarr, 0, x);
 					String value_string = "test" + String.valueOf(counter) + ".db";
