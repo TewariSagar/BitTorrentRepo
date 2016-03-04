@@ -55,6 +55,8 @@ public class fileSplit
 
 	}
 
+
+
 	public void printHashMap()
 	{
 		Set<Integer> keys = h.keySet();
@@ -62,8 +64,19 @@ public class fileSplit
 	    System.out.println(key + " " + h.get(key));
 	}
 
-	
-
-
-	
+	public void mkdir(String peername)
+	{
+			File file = new File("peer_"+ peername);
+			if (!file.exists()) 
+			{
+				if (file.mkdir()) 
+				{
+					System.out.println("Directory was not found");
+					System.out.println("Directory is created!");
+				} else 
+				{
+					System.out.println("Failed to create directory!");
+				}
+			}
+		}
 }
