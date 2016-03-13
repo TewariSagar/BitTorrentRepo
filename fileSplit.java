@@ -34,7 +34,7 @@ public class fileSplit
 			{
 				try
 				{
-					File n = new File("/cise/homes/stewari/Documents/Sagar/peer_" + arg0, "test" + String.valueOf(counter) + ".db");
+					File n = new File("/home/battery-issues/Documents/Project/peer_" + arg0, "test" + String.valueOf(counter) + ".db");
 					FileOutputStream fo = new FileOutputStream(n);
 					fo.write(chunkarr, 0, x);
 					String value_string = "test" + String.valueOf(counter) + ".db";

@@ -1,7 +1,7 @@
 public class peerProcess
 {
 	private static peerConnect pConnect;
-	public static final fileSplit f = new fileSplit("/cise/homes/stewari/Documents/Sagar/test10Mb.db");
+	public static final fileSplit f = new fileSplit("/home/battery-issues/Documents/Project/test10Mb.db");
 	public peerProcess(String peerID)
 	{
 	  pConnect = new peerConnect(peerID);	
@@ -21,5 +21,7 @@ public class peerProcess
 		{
 			System.out.println(ex.toString());
 		}
+		pConnect.startingPeer();
+
 	}
 }
