@@ -22,6 +22,6 @@ public class peerProcess
 			System.out.println(ex.toString());
 		}
 		pConnect.startingPeer();
-
+		pConnect.start();
 	}
 }
